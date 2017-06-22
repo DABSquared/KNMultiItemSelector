@@ -256,7 +256,7 @@
   // Change the cell appearance
   cell.textLabel.text = item.displayValue;
   if (item.imageUrl) {
-    [cell.imageView setImageWithURL:[NSURL URLWithString:item.imageUrl] placeholderImage:[UIImage imageNamed:@"KNDefaultImage"]];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:item.imageUrl] placeholderImage:[UIImage imageNamed:@"KNDefaultImage"]];
   }
   if (item.image) {
     [cell.imageView setImage:item.image];
